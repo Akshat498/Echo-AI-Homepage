@@ -38,5 +38,6 @@
 @media (max-width:576px) {
     :root {
         --fs-2xl: 32px;
+        --fs-xl: 28px;
     }
 }
