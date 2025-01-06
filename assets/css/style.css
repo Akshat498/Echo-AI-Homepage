@@ -20,6 +20,12 @@
     border: none;
 }
 
+.buton-1:hover{
+    background: linear-gradient(103.52deg, #FFFFFF 18.99%, #32C8F1 82.34%);
+    color: #092048;
+    transition: all 400ms;
+}
+
 .container {
     max-width: 1140px !important;
     padding-left: 12px;
@@ -47,6 +53,12 @@
     max-width: 230px;
     border: none;
     margin-top: 24px;
+}
+
+.buton-2:hover{
+    background: linear-gradient(103.52deg, #FFFFFF 18.99%, #32C8F1 82.34%);
+    color: #092048;
+    transition: all 400ms;
 }
 
 .pt-166 {
