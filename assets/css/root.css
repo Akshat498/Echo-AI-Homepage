@@ -1,6 +1,6 @@
 :root {
     --fs-sm: 16px;
-    --fs-md: 20px;
+    --fs-md: 20px ;
     --fs-lg: 24px;
     --fs-xl: 48px;
     --fs-2xl: 72px;
@@ -18,7 +18,7 @@
 }
 
 .fs-md {
-    font-size: var(--fs-md) !important;
+    font-size: var(--fs-md) ;
 }
 
 .fs-xl {
@@ -30,7 +30,7 @@
 }
 
 .fc-white {
-    color: var(--fc-white);
+    color: var(--fc-white) !important;
 }
 
 

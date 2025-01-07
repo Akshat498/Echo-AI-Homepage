@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url(./root.css);
 
@@ -5,10 +6,19 @@
     height: 100px;
 }
 
-.full-parent {
-    background-image: url(/assets/images/parent-img.png);
+.parent {
+    background-image: url(/assets/images/bg-img.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.full-parent {
+    background-color: #01000B;
+}
+
+.robo-img {
+    margin-top: 55px;
+    margin-bottom: 118.71px;
 }
 
 .buton-1 {
@@ -20,9 +30,24 @@
     border: none;
 }
 
-.buton-1:hover{
+.buton-3 {
+    line-height: 25.2px;
+    background: linear-gradient(103.52deg, #3A3EF5 18.99%, #32C8F1 82.34%);
+    box-shadow: 0px 0px 12px 0px #BF97FF3D inset;
+    padding: 13px 32px 13px 32px;
+    border-radius: 57px;
+    border: none;
+}
+
+.buton-1:hover {
     background: linear-gradient(103.52deg, #FFFFFF 18.99%, #32C8F1 82.34%);
-    color: #092048;
+    color: #092048 !important;
+    transition: all 400ms;
+}
+
+.buton-3:hover {
+    background: linear-gradient(103.52deg, #FFFFFF 18.99%, #32C8F1 82.34%);
+    color: #092048 !important;
     transition: all 400ms;
 }
 
@@ -55,9 +80,9 @@
     margin-top: 24px;
 }
 
-.buton-2:hover{
+.buton-2:hover {
     background: linear-gradient(103.52deg, #FFFFFF 18.99%, #32C8F1 82.34%);
-    color: #092048;
+    color: #092048 !important;
     transition: all 400ms;
 }
 
@@ -107,6 +132,10 @@ div.slick-track {
     padding-top: 40px;
 }
 
+.slick-dots li button:before {
+    color: #FFFFFF !important;
+}
+
 .pt-47 {
     padding-top: 47px;
     gap: 8px;
@@ -116,48 +145,17 @@ div.slick-track {
     max-width: 316px;
 }
 
-.acc-box {
-    max-width: 1022px !important;
-    gap: 24px;
-    margin-top: 60px;
-}
-
-.accordion-button {
-    border: 1px solid #FFFFFF1A !important;
-    border-radius: 12px !important;
-    background-color: #01000B !important;
-    color: #FFFFFF !important;
-}
-
-.accordion-button:active {
-    border: none !important;
-}
-
-.accordion-body {
-    background-color: #01000B !important;
-}
-
-.accordion-item {
-    border: none !important;
-    border-image: linear-gradient(103.52deg, #3A3EF5 18.99%, #32C8F1 82.34%) 1;
-    background-color: transparent !important;
-}
-
-.accordion-button:not(.collapsed) {
-    box-shadow: none !important;
-    color: #FFFFFF !important;
-}
-
 .mt-210 {
     margin-top: 210px;
 }
 
 .footer-text {
-    opacity: 70%;
+    opacity: 100%;
 }
 
-.footer-text:hover {
-    opacity: 100%;
+.footer-text-2 {
+    opacity: 70%;
+    padding-top: 14px;
 }
 
 .gap-12 {
@@ -170,7 +168,7 @@ div.slick-track {
 }
 
 .last-text {
-    max-width:1140px;
+    max-width: 1140px;
     height: 44px;
     gap: 20px;
     border-top: 2px solid;
@@ -189,12 +187,6 @@ div.slick-track {
 
 .pt-32 {
     padding-top: 32px;
-}
-
-.accordion-button::after{
-    background-image: url(/assets/images/svg/arrow.svg) !important;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .w-50px {
@@ -230,6 +222,7 @@ div.slick-track {
     border-radius: 10px;
     background-color: #FFFFFF;
     position: relative;
+    margin-right: 30px;
 }
 
 .z-5 {
@@ -238,12 +231,10 @@ div.slick-track {
 
 .rotate40 {
     transform: rotate(40deg);
-
 }
 
 .rotate-45 {
     transform: rotate(-46deg);
-
 }
 
 .connect-wallet-btn:hover {
@@ -251,27 +242,67 @@ div.slick-track {
     color: var(--null);
 }
 
-
 .navbar-link {
     line-height: 20.16px;
 }
 
-.nav-link {
+.nav-name {
     gap: 32px;
 }
-
 
 .navbar-link:hover {
     color: var(--sec);
     -webkit-text-stroke: 1px var(--sec);
 }
 
+.accordion {
+    max-width: 1022px;
+    padding: 24px;
+    --bs-accordion-border-color: none !important;
+    --bs-accordion-btn-focus-box-shadow: none !important;
+}
+
+.accordion-item {
+    background-color: #01000B !important;
+    border: 1px solid #FFFFFF1A !important;
+    border-radius: 12px !important;
+}
+
+.accordion-button {
+    background-color: #01000B !important;
+}
+
+.accordion-button::after {
+    width: 20px !important;
+    background-image: url(/assets/images/svg/arrow.svg) !important;
+    padding-left: 20px !important;
+}
+
+.accordion-header .accordion-button {
+    border-radius: 12px !important;
+}
+
+.mb-356 {
+    margin-bottom: 356px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+@media (min-width:992px) {
+    .buton-1 {
+        display: none;
+    }
+}
+
 @media (min-width:1440px) {
-    .parent {
-        background-image: url(/assets/images/bg-img.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding-bottom: 240.23px;
+    .robo-img {
+        animation: up-and-down 3s ease-in-out infinite;
     }
 
     .robo-img {
@@ -279,16 +310,12 @@ div.slick-track {
     }
 
     .mt-356 {
-        margin-top: 356px ;
+        margin-top: 356px !important;
     }
 }
 
-@media (max-width:1440px) {
+@media (max-width:1439.98px) {
     .parent {
-        background-image: url(/assets/images/bg-img.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding-bottom: 100px ;
         width: 100% !important;
     }
 
@@ -298,6 +325,18 @@ div.slick-track {
 
     .footer-sec {
         margin-top: 100px;
+    }
+
+    .pt-166 {
+        padding-top: 40px;
+    }
+
+    .mt-210 {
+        margin-top: 80px;
+    }
+
+    .mt-175 {
+        margin-top: 90px;
     }
 }
 
@@ -312,7 +351,7 @@ div.slick-track {
         display: none;
     }
 
-    .nav-link {
+    .nav-name {
         display: flex !important;
         flex-direction: column;
         background: #092048 !important;
@@ -320,7 +359,7 @@ div.slick-track {
         min-height: 100vh;
         position: fixed;
         justify-content: center;
-        bottom: 0;
+        bottom: -2%;
         right: -100% !important;
         top: 0%;
         transition: all 300ms linear;
@@ -344,10 +383,14 @@ div.slick-track {
         width: 50%;
     }
 
-    .heading{
+    .heading {
         text-align: center;
         margin: auto;
         display: flex;
+    }
+
+    .nav-icon {
+        margin-left: 30px;
     }
 }
 
@@ -358,10 +401,22 @@ div.slick-track {
         background-size: cover;
         background-repeat: no-repeat;
         padding-bottom: 5px;
+        padding-left: 20px !important;
     }
 
     .robo-img {
         width: 100%;
+    }
+
+    .footer-icon {
+        margin: auto;
+        display: flex;
+        padding-bottom: 70px;
+    }
+
+    .footer-parent {
+        display: flex;
+
     }
 }
 
@@ -373,10 +428,35 @@ div.slick-track {
     .mt-50 {
         margin-top: 50px !important;
     }
+
 }
 
 @media (max-width:425px) {
     .robo-img {
         width: 100%;
+    }
+
+    .nav-icon {
+        max-width: 130px;
+    }
+}
+
+@media (min-width:768px) {
+    .accordion {
+        width: 1022px;
+    }
+}
+
+@keyframes up-and-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }

@@ -2,7 +2,7 @@ $('.Testimonials').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplaySpeed: 3000,
-    autoplay:true,
+    autoplay: true,
     arrows: false,
     dots: false,
     responsive: [
@@ -16,10 +16,11 @@ $('.Testimonials').slick({
             }
         },
         {
-            breakpoint: 768,
+            breakpoint: 576,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                dots: true,
             }
         },
 
