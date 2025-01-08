@@ -7,6 +7,7 @@
 
 
     --fc-white: #FFFFFF;
+    --fc-dark-grey:#01000B;
 }
 
 .fs-sm {
@@ -18,7 +19,7 @@
 }
 
 .fs-md {
-    font-size: var(--fs-md) ;
+    font-size: var(--fs-md) !important;
 }
 
 .fs-xl {
@@ -31,6 +32,10 @@
 
 .fc-white {
     color: var(--fc-white) !important;
+}
+
+.bg-black {
+    background-color: var(--fc-dark-grey) !important;
 }
 
 
