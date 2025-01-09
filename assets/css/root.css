@@ -7,7 +7,9 @@
 
 
     --fc-white: #FFFFFF;
-    --fc-dark-grey:#01000B;
+    --fc-ninja:#01000B;
+    --fc-corase-wool:#1A1A23;
+    --bg-light-white:#FFFFFF;
 }
 
 .fs-sm {
@@ -34,8 +36,16 @@
     color: var(--fc-white) !important;
 }
 
-.bg-black {
-    background-color: var(--fc-dark-grey) !important;
+.fc-ninja {
+    background-color: var(--fc-ninja) !important;
+}
+
+.fc-corase-wool{
+    color: var(--fc-corase-wool);
+}
+
+.bg-light-white{
+    background-color: var(#FFFFFF);
 }
 
 
