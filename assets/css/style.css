@@ -9,6 +9,7 @@
     background-image: url(/assets/images/png/bg-img.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .robo-img {
@@ -124,6 +125,7 @@ div.slick-track {
 
 .slick-dots li button:before {
     color: var(--fc-white) !important;
+    margin-top: 20px;
 }
 
 .pt-47 {
@@ -227,7 +229,7 @@ div.slick-track {
 
 .accordion-button:not(.collapsed) {
     color: var(--fc-white) !important;
-    background-color: black !important;
+    background-color: #01000B!important;
     box-shadow: unset !important;
     position: relative;
 }
@@ -266,13 +268,13 @@ div.slick-track {
 }
 
 .accordion-button {
-    background-color: black !important;
+    background-color: #01000B !important;
     border-radius: 12px !important;
 }
 
 .accordion {
     --bs-accordion-color: var(--bs-body-color);
-    --bs-accordion-bg: black !important;
+    --bs-accordion-bg:#01000B !important;
     --bs-accordion-border-width: var(--bs-border-width);
     --bs-accordion-border-radius: var(--bs-border-radius);
     max-width: 1022px;
@@ -282,6 +284,8 @@ div.slick-track {
 .accordion-button::after {
     background-image: url(/assets/images/svg/arrow.svg) !important;
     flex-direction: column-reverse;
+    width: 24px;
+    height: 24px;
 }
 
 .accordion-item {
@@ -448,6 +452,10 @@ div.slick-track {
 
     .nav-icon {
         max-width: 130px;
+    }
+
+    .gap-12{
+        gap: 4px;
     }
 }
 

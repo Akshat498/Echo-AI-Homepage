@@ -1,15 +1,14 @@
 :root {
     --fs-sm: 16px;
-    --fs-md: 20px ;
+    --fs-md: 20px;
     --fs-lg: 24px;
     --fs-xl: 48px;
     --fs-2xl: 72px;
 
-
     --fc-white: #FFFFFF;
-    --fc-ninja:#01000B;
-    --fc-corase-wool:#1A1A23;
-    --bg-light-white:#FFFFFF;
+    --fc-ninja: #01000B;
+    --fc-corase-wool: #1A1A23;
+    --bg-light-white: #FFFFFF;
 }
 
 .fs-sm {
@@ -40,15 +39,13 @@
     background-color: var(--fc-ninja) !important;
 }
 
-.fc-corase-wool{
+.fc-corase-wool {
     color: var(--fc-corase-wool);
 }
 
-.bg-light-white{
+.bg-light-white {
     background-color: var(#FFFFFF);
 }
-
-
 
 @media (max-width:576px) {
     :root {
