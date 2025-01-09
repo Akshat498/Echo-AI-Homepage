@@ -151,10 +151,6 @@ div.slick-track {
     color: #FFFFFF;
 }
 
-.footer-text-2:hover {
-    color: #32C8F1;
-}
-
 .gap-12 {
     gap: 12px;
     margin-top: 18px;
@@ -220,7 +216,8 @@ div.slick-track {
     color: white;
 }
 
-.navbar-link:hover {
+.navbar-link:hover,
+.footer-text-2:hover {
     color: #32C8F1;
 }
 
@@ -441,7 +438,8 @@ div.slick-track {
 
 @media (max-width:576px) {
     .heading {
-        line-height: 30px;
+        line-height: 35px;
+        padding-bottom: 20px;
     }
 
     .robo-img {
