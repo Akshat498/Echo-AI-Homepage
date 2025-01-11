@@ -1,8 +1,6 @@
-$('.Testimonials').slick({
+$('.testimonials').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplaySpeed: 3000,
-    autoplay: true,
     arrows: false,
     dots: false,
     responsive: [

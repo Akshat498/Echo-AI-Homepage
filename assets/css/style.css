@@ -10,11 +10,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+    padding-bottom: 240px;
 }
 
 .robo-img {
     margin-top: 55px;
-    margin-bottom: 118.71px;
 }
 
 .buton-1,
@@ -158,7 +158,7 @@ div.slick-track {
     margin-top: 18px;
 }
 
-.outfit {
+.outfit-ff {
     font-family: "Outfit", serif;
 }
 
@@ -210,7 +210,7 @@ div.slick-track {
 }
 
 .rotate-45 {
-    transform: rotate(-46deg);
+    transform: rotate(-44deg);
 }
 
 .navbar-link {
@@ -227,18 +227,18 @@ div.slick-track {
     gap: 32px;
 }
 
-.accordion-button:not(.collapsed) {
+.Faq-acc .accordion-button:not(.collapsed) {
     color: var(--fc-white) !important;
-    background-color: #01000B!important;
+    background-color: #01000B !important;
     box-shadow: unset !important;
     position: relative;
 }
 
-.accordion-button:focus {
+.Faq-acc .accordion-button:focus {
     box-shadow: unset !important;
 }
 
-.accordion-item::before {
+.Faq-acc .accordion-item::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -251,50 +251,42 @@ div.slick-track {
     mask-composite: exclude;
 }
 
-.accordion-button:not(.collapsed)::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    padding-top: 1px;
-    padding-right: 1px;
-    padding-left: 1px;
-    border-top-left-radius: 12px !important;
-    border-top-right-radius: 12px !important;
-    background: linear-gradient(103.52deg, #3A3EF5 18.99%, #32C8F1 82.34%);
-    mask:
-        linear-gradient(#000 0 0) content-box,
-        linear-gradient(#000 0 0);
-    mask-composite: exclude;
+.Faq-acc .accordion-button:not(.collapsed)::before {
+    padding: 1px 1px 0px 1px !important;
 }
 
-.accordion-button {
+.Faq-acc .accordion-button {
     background-color: #01000B !important;
     border-radius: 12px !important;
 }
 
-.accordion {
+.Faq-acc .accordion-header.active {
+    padding: 1px 1px 0px 1px;
+}
+
+.Faq-acc .accordion {
     --bs-accordion-color: var(--bs-body-color);
-    --bs-accordion-bg:#01000B !important;
+    --bs-accordion-bg: #01000B !important;
     --bs-accordion-border-width: var(--bs-border-width);
     --bs-accordion-border-radius: var(--bs-border-radius);
     max-width: 1022px;
     width: 100%;
 }
 
-.accordion-button::after {
+.Faq-acc .accordion-button::after {
     background-image: url(/assets/images/svg/arrow.svg) !important;
     flex-direction: column-reverse;
     width: 24px;
     height: 24px;
 }
 
-.accordion-item {
+.Faq-acc .accordion-item {
     border: 1px solid #1A1A23 !important;
     border-radius: 12px !important;
     position: relative;
 }
 
-.accordion-item:first-of-type {
+.Faq-acc .accordion-item:first-of-type {
     border-radius: 12px;
 }
 
@@ -326,7 +318,7 @@ div.slick-track {
     padding-top: 8.39px;
 }
 
-@media (min-width:992px) {
+@media (min-width:991.98px) {
     .buton-1 {
         display: none;
     }
@@ -334,13 +326,14 @@ div.slick-track {
 
 @media (min-width:1440px) {
     .circle {
-        bottom: -27%;
+        bottom: -23%;
+        left: 0%;
         width: 400px;
     }
 
     .robo-img {
         animation: up-and-down 3s ease-in-out infinite;
-        width: 472px !important;
+        width: 100%;
     }
 
     .mt-356 {
@@ -358,10 +351,6 @@ div.slick-track {
         width: 100% !important;
     }
 
-    .robo-img {
-        width: 100%;
-    }
-
     .footer-sec {
         margin-top: 100px;
     }
@@ -371,15 +360,19 @@ div.slick-track {
     }
 
     .mt-210 {
-        margin-top: 80px;
+        margin-top: 130px;
     }
 
     .mt-175 {
         margin-top: 90px;
     }
+
+    .parent {
+        padding-bottom: 100px;
+    }
 }
 
-@media (max-width:992px) {
+@media (max-width:991.98px) {
     .nav-name {
         display: flex !important;
         flex-direction: column;
@@ -396,7 +389,7 @@ div.slick-track {
 
     .show-nvabar {
         right: 0 !important;
-        z-index: 1;
+        z-index: 3;
     }
 
     .menu-btn {
@@ -415,17 +408,13 @@ div.slick-track {
     }
 
     .circle {
-        bottom: -10%;
+        bottom: 5%;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:767.98px) {
     .br-2 {
         border: none !important;
-    }
-
-    .robo-img {
-        width: 100%;
     }
 
     .footer-icon {
@@ -440,7 +429,7 @@ div.slick-track {
     }
 }
 
-@media (max-width:576px) {
+@media (max-width:575.98px) {
     .heading {
         line-height: 35px;
         padding-bottom: 20px;
@@ -454,8 +443,12 @@ div.slick-track {
         max-width: 130px;
     }
 
-    .gap-12{
-        gap: 4px;
+    .gap-12 {
+        gap: 6px;
+    }
+
+    div.slick-track {
+        padding-top: 20px;
     }
 }
 
