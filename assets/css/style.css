@@ -15,6 +15,7 @@
 
 .robo-img {
     margin-top: 55px;
+    width: 100%;
 }
 
 .buton-1,
@@ -349,6 +350,7 @@ div.slick-track {
 
     .parent {
         width: 100% !important;
+        padding-bottom: 100px;
     }
 
     .footer-sec {
@@ -365,10 +367,6 @@ div.slick-track {
 
     .mt-175 {
         margin-top: 90px;
-    }
-
-    .parent {
-        padding-bottom: 100px;
     }
 }
 
@@ -409,6 +407,10 @@ div.slick-track {
 
     .circle {
         bottom: 5%;
+    }
+
+    .mt-60 {
+        margin-top: 30px;
     }
 }
 
